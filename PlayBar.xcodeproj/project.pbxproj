@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9403E14B147DC37200EA5E7D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9403E14A147DC37200EA5E7D /* Cocoa.framework */; };
+		9403E155147DC37200EA5E7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9403E153147DC37200EA5E7D /* InfoPlist.strings */; };
+		9403E157147DC37200EA5E7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9403E156147DC37200EA5E7D /* main.m */; };
+		9403E15B147DC37200EA5E7D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9403E159147DC37200EA5E7D /* Credits.rtf */; };
+		9403E15E147DC37200EA5E7D /* PBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9403E15D147DC37200EA5E7D /* PBAppDelegate.m */; };
+		9403E161147DC37200EA5E7D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9403E15F147DC37200EA5E7D /* MainMenu.xib */; };
+		9403E168147DD0E300EA5E7D /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9403E167147DD0E300EA5E7D /* ApplicationServices.framework */; };
+		9403E16B147DE45D00EA5E7D /* PBPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9403E16A147DE45D00EA5E7D /* PBPlayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9403E146147DC37200EA5E7D /* PlayBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9403E14A147DC37200EA5E7D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9403E14D147DC37200EA5E7D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9403E14E147DC37200EA5E7D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9403E14F147DC37200EA5E7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9403E152147DC37200EA5E7D /* PlayBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlayBar-Info.plist"; sourceTree = "<group>"; };
+		9403E154147DC37200EA5E7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9403E156147DC37200EA5E7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9403E158147DC37200EA5E7D /* PlayBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlayBar-Prefix.pch"; sourceTree = "<group>"; };
+		9403E15A147DC37200EA5E7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		9403E15C147DC37200EA5E7D /* PBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBAppDelegate.h; sourceTree = "<group>"; };
+		9403E15D147DC37200EA5E7D /* PBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBAppDelegate.m; sourceTree = "<group>"; };
+		9403E160147DC37200EA5E7D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9403E167147DD0E300EA5E7D /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		9403E169147DE45D00EA5E7D /* PBPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBPlayer.h; sourceTree = "<group>"; };
+		9403E16A147DE45D00EA5E7D /* PBPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBPlayer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9403E143147DC37200EA5E7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9403E168147DD0E300EA5E7D /* ApplicationServices.framework in Frameworks */,
+				9403E14B147DC37200EA5E7D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9403E13B147DC37100EA5E7D = {
+			isa = PBXGroup;
+			children = (
+				9403E167147DD0E300EA5E7D /* ApplicationServices.framework */,
+				9403E150147DC37200EA5E7D /* PlayBar */,
+				9403E149147DC37200EA5E7D /* Frameworks */,
+				9403E147147DC37200EA5E7D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9403E147147DC37200EA5E7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9403E146147DC37200EA5E7D /* PlayBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9403E149147DC37200EA5E7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9403E14A147DC37200EA5E7D /* Cocoa.framework */,
+				9403E14C147DC37200EA5E7D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9403E14C147DC37200EA5E7D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9403E14D147DC37200EA5E7D /* AppKit.framework */,
+				9403E14E147DC37200EA5E7D /* CoreData.framework */,
+				9403E14F147DC37200EA5E7D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		9403E150147DC37200EA5E7D /* PlayBar */ = {
+			isa = PBXGroup;
+			children = (
+				9403E15C147DC37200EA5E7D /* PBAppDelegate.h */,
+				9403E15D147DC37200EA5E7D /* PBAppDelegate.m */,
+				9403E15F147DC37200EA5E7D /* MainMenu.xib */,
+				9403E151147DC37200EA5E7D /* Supporting Files */,
+				9403E169147DE45D00EA5E7D /* PBPlayer.h */,
+				9403E16A147DE45D00EA5E7D /* PBPlayer.m */,
+			);
+			path = PlayBar;
+			sourceTree = "<group>";
+		};
+		9403E151147DC37200EA5E7D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9403E152147DC37200EA5E7D /* PlayBar-Info.plist */,
+				9403E153147DC37200EA5E7D /* InfoPlist.strings */,
+				9403E156147DC37200EA5E7D /* main.m */,
+				9403E158147DC37200EA5E7D /* PlayBar-Prefix.pch */,
+				9403E159147DC37200EA5E7D /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9403E145147DC37200EA5E7D /* PlayBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9403E164147DC37200EA5E7D /* Build configuration list for PBXNativeTarget "PlayBar" */;
+			buildPhases = (
+				9403E142147DC37200EA5E7D /* Sources */,
+				9403E143147DC37200EA5E7D /* Frameworks */,
+				9403E144147DC37200EA5E7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlayBar;
+			productName = PlayBar;
+			productReference = 9403E146147DC37200EA5E7D /* PlayBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9403E13D147DC37100EA5E7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Ryan Petrich";
+			};
+			buildConfigurationList = 9403E140147DC37100EA5E7D /* Build configuration list for PBXProject "PlayBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9403E13B147DC37100EA5E7D;
+			productRefGroup = 9403E147147DC37200EA5E7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9403E145147DC37200EA5E7D /* PlayBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9403E144147DC37200EA5E7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9403E155147DC37200EA5E7D /* InfoPlist.strings in Resources */,
+				9403E15B147DC37200EA5E7D /* Credits.rtf in Resources */,
+				9403E161147DC37200EA5E7D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9403E142147DC37200EA5E7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9403E157147DC37200EA5E7D /* main.m in Sources */,
+				9403E15E147DC37200EA5E7D /* PBAppDelegate.m in Sources */,
+				9403E16B147DE45D00EA5E7D /* PBPlayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9403E153147DC37200EA5E7D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9403E154147DC37200EA5E7D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9403E159147DC37200EA5E7D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9403E15A147DC37200EA5E7D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		9403E15F147DC37200EA5E7D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9403E160147DC37200EA5E7D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9403E162147DC37200EA5E7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9403E163147DC37200EA5E7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9403E165147DC37200EA5E7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlayBar/PlayBar-Prefix.pch";
+				INFOPLIST_FILE = "PlayBar/PlayBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9403E166147DC37200EA5E7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlayBar/PlayBar-Prefix.pch";
+				INFOPLIST_FILE = "PlayBar/PlayBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9403E140147DC37100EA5E7D /* Build configuration list for PBXProject "PlayBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9403E162147DC37200EA5E7D /* Debug */,
+				9403E163147DC37200EA5E7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9403E164147DC37200EA5E7D /* Build configuration list for PBXNativeTarget "PlayBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9403E165147DC37200EA5E7D /* Debug */,
+				9403E166147DC37200EA5E7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9403E13D147DC37100EA5E7D /* Project object */;
+}
