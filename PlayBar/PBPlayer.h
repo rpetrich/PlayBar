@@ -12,11 +12,15 @@
 @private
     NSString *_bundleIdentifier;
     NSAppleScript *_titleScript;
+    NSAppleScript *_toggleScript;
+    NSAppleScript *_nextScript;
     NSRunningApplication *_runningApplication;
 }
 
 + (id)playerWithBundleIdentifier:(NSString *)bundleIdentifier;
 
 @property (nonatomic, readonly) NSString *currentTitle;
+- (BOOL)togglePlaying;
+- (BOOL)nextTrack;
 
 @end

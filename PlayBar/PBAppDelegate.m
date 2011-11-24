@@ -28,14 +28,36 @@
             return;
         }
     }
-    statusItem.title = @"(not running)";
+    statusItem.title = @"  ";
 }
-	
+
+- (void)statusItemClicked
+{
+    for (PBPlayer *player in players) {
+        if ([player togglePlaying])
+            break;
+    }
+}
+
+- (void)statusItemDoubleClicked
+{
+    for (PBPlayer *player in players) {
+        if ([player nextTrack]) {
+            [self updateTitle];
+            break;
+        }
+    }
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     statusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength] retain];
+    statusItem.target = self;
+    statusItem.action = @selector(statusItemClicked);
+    statusItem.doubleAction = @selector(statusItemDoubleClicked);
     players = [[NSArray alloc] initWithObjects:
-               [PBPlayer playerWithBundleIdentifier:@"com.spotify.client"], 
+               [PBPlayer playerWithBundleIdentifier:@"com.spotify.client"],
+               [PBPlayer playerWithBundleIdentifier:@"com.rdio.desktop"],
                [PBPlayer playerWithBundleIdentifier:@"com.apple.iTunes"],
                nil];
     [self updateTitle];

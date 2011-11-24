@@ -31,11 +31,13 @@
 {
     [_bundleIdentifier release];
     [_runningApplication release];
+    [_toggleScript release];
+    [_nextScript release];
     [_titleScript release];
     [super dealloc];
 }
 
-- (NSString *)currentTitle
+- (NSRunningApplication *)application
 {
     if (_runningApplication.terminated) {
         [_runningApplication release];
@@ -44,10 +46,16 @@
     if (!_runningApplication) {
         _runningApplication = [[[NSRunningApplication runningApplicationsWithBundleIdentifier:_bundleIdentifier] lastObject] retain];
     }
-    if (_runningApplication) {
+    return _runningApplication;
+}
+
+- (NSString *)currentTitle
+{
+    NSRunningApplication *app = [self application];
+    if (app) {
         if (!_titleScript) {
-            NSString *name = [_runningApplication localizedName];
-            NSString *script = [NSString stringWithFormat:@"tell application \"%@\" to return artist of current track & \" - \" & name of current track", name];
+            NSString *name = [app localizedName];
+            NSString *script = [NSString stringWithFormat:@"tell app \"%@\" to return artist of current track & \" - \" & name of current track", name];
             _titleScript = [[NSAppleScript alloc] initWithSource:script];
             [_titleScript compileAndReturnError:NULL];
         }
@@ -56,5 +64,40 @@
         return nil;
     }
 }
+
+- (BOOL)togglePlaying
+{
+    NSRunningApplication *app = [self application];
+    if (app) {
+        if (!_toggleScript) {
+            NSString *name = [app localizedName];
+            NSString *script = [NSString stringWithFormat:@"tell app \"%@\"\nif player state as string = \"playing\" then\npause\nelse\nplay\nend if\nend tell", name];
+            _toggleScript = [[NSAppleScript alloc] initWithSource:script];
+            [_toggleScript compileAndReturnError:NULL];
+        }
+        [_toggleScript executeAndReturnError:NULL];
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
+- (BOOL)nextTrack
+{
+    NSRunningApplication *app = [self application];
+    if (app) {
+        if (!_nextScript) {
+            NSString *name = [app localizedName];
+            NSString *script = [NSString stringWithFormat:@"tell app \"%@\" to next track", name];
+            _nextScript = [[NSAppleScript alloc] initWithSource:script];
+            [_nextScript compileAndReturnError:NULL];
+        }
+        [_nextScript executeAndReturnError:NULL];
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
 
 @end
